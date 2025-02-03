@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header text-center">
+            <h1>Login</h1>
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" autocomplete="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" autocomplete="password" id="password" placeholder="Password" required>
+                <input type="checkbox" class="mr-1 mt-2" onclick="show_password()">Show Password
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="text-center">
+            <span>Don't have an account? <a href="register.html">Sign In</a></span>
+            <span>Forgot Password? <small-btn style= "cursor:pointer" onclick="toggle('email-popup')">Reset Password</small-btn></span>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="button" id="login-with-google-btn" class="login-with-google-btn" >
+            Sign in with Google
+        </button>
+    </div>
+
+    <div id="email-popup" class="popup container p-3 shadow">
+        <button id="x" class="btn top-right-btn d-flex align-items-center justify-content-center" onclick="x_btn(this)">x</button>
+
+        <form id="submitForm" class="form-group">
+        <div class="header">
+            <h3>Reset Password</h3>
+        </div>
+        <div>
+            <label for="Email"></label>
+            <input type="text" id="Email" placeholder="Account Email" class="form-control" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary mt-3">Send Email</button>
+        </form> 
+    </div>
+
+  </body>
+  <script src="firebaseconfig.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+
+  <!-- Our script must be loaded after firebase references -->
+  <script src="login.js"></script>
+
+</html>

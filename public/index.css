@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555; /* Matched color */
+    color:rgb(190, 190, 190);
+    text-align: center;
+  }
+  
+  header {
+    background-color: #414141; /* Matched color */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  button {
+    background-color: #516071; /* Matched color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #283441; /* Matched color */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .features,
+  .benefits,
+  .about {
+    margin-bottom: 50px;
+  }
+  
+  .features h2,
+  .benefits h2,
+  .about h2 {
+    color:#cecece;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features ul,
+  .benefits ul {
+    text-align: center;
+  }
+  
+  .features li,
+  .benefits li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
